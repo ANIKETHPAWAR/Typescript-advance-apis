@@ -1,10 +1,6 @@
-interface User{
-    name: string;
-    age: number;
-};
-
-function sumOfage(user1: User, user2: User): number{
-    return user1.age + user2.age;
+const user:Users={
+    "xyz@123" :{age : 21 , name : "xyz"},
+    "abc@123" :    {age : 22 , name : "abc"},
 }
-const age = sumOfage({name: 'John', age: 30}, {name: 'Jane', age: 25});
-console.log(age); // 45
+
+type Users = Record<string, {age: number , name: string}>
