@@ -1,7 +1,6 @@
 "use strict";
-;
-function sumOfage(user1, user2) {
-    return user1.age + user2.age;
-}
-const age = sumOfage({ name: 'John', age: 30 }, { name: 'Jane', age: 25 });
-console.log(age); // 45
+const users = new Map();
+users.set("xyz@123", { age: 21, name: "xyz" });
+users.set("abc@123", { age: 22, name: "abc" });
+const user = users.get("xyz@123");
+console.log(user);
